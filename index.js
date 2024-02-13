@@ -39,7 +39,7 @@ async function run() {
         res.send(result)
         // newPhoto.id = user
     })
-    app.get('/allPhoto', async (req, res) =>{
+    app.get('/allPhotos', async (req, res) =>{
         const cursor = photoCard.find();
         const result = await cursor.toArray();
         res.send(result)
